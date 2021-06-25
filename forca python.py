@@ -1,3 +1,5 @@
+#github: https://github.com/tucas17gamer
+#project make at "mundo maker" (https://www.mundomaker.cc/)
 def win(letter_list, word):
     word_win = ''
     for win_loop in range(len(letter_list)):
