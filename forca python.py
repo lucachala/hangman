@@ -1,5 +1,3 @@
-#github: https://github.com/tucas17gamer
-#project make at "mundo maker" (https://www.mundomaker.cc/)
 def win(letter_list, word):
     word_win = ''
     for win_loop in range(len(letter_list)):
@@ -55,7 +53,7 @@ def forca():
                 print('\n\nWord: ', word_win)
                 print('\n\nLife:', life)
             else:
-                if letter in wrong_letter:
+                if letter in dead_letter:
                     print('You alredy try this letter')
                     letter = ''
                     forca = []
@@ -74,7 +72,7 @@ def forca():
         else:
             print ('\nOnly one letter!\n\n')
         word_win = win(word_ingame, word)
-    print('\nThis was the word; ', word)
+    print('\nThis was the word: ', word)
     print('\nYou lose, NOOB!')
     input('Press any key to leave')
 forca()
